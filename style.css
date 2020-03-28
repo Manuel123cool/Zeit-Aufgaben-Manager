@@ -1,0 +1,12 @@
+#wrapper {
+    width: 550px;
+    margin: auto;
+}
+
+input {
+    float: right;
+}
+
+article {
+    margin-top: 30px;
+}
