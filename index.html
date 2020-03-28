@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zeit-Aufgaben-Manager</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+   <div id="wrapper"> 
+    <h3>Zeit-Aufgaben-Manager</h3>
+      <p>Sie können eine Wert-Eingabe auslassen dieser Wert wird dann mit "Formular auswerten" errechnet, außer Anzahl der produktiven Tage.</p>
+      <hr>
+      <form>
+       <p>
+         <label for="allDayTimeInput">Verfügbare Zeit in Tagen: </label>
+         <input id="allDayTimeInput" type="number" placeholder="z.B. 30 Tage">
+       </p>
+       <p>
+         <label for="workLengthInput">Gesamte Arbeitslänge: </label>
+         <input id="workLengthInput" type="number" placeholder="z.B 900 Seiten" >
+       </p>
+       <p>
+         <label for="normalWorkLengthInput">Wochentag mögliche Arbeitslänge:</label>
+         <input id="normalWorkLengthInput" type="number" placeholder="z.B. 10 Seiten">
+       </p>
+       <p>
+         <label for="weekendTimeInput">Wochenendtag Arbeitslänge:</label>
+         <input id="weekendTimeInput" placeholder="z.B. 25 Seiten" type="number">
+       </p>
+       <p>
+         <label for="productivDaysInput">Anzahl der produktiven Tage:</label>
+         <input id="productivDaysInput" placeholder="z.B. 5 Tage" type="number">
+       </p>
+       <p>
+         <label for="productivDaysWorkLengthInput">Mögliche Arbeitslänge an <br> produktiven Tagen: </label>
+         <input id="productivDaysWorkLengthInput" placeholder="z.B 30 Seiten" type="number">
+       </p>
+       <p>
+           <button id="eventButton" type="button">Formular auswerten</button>
+       </p>
+      </form>
+         <hr>
+     <article>
+       <section>
+         <p>
+           Verfügbare Zeit in Tagen: <span id="allDayTimeOutput"></span>
+         </p>
+         <p>
+           Gesamte Arbeitslänge: <span id="workLengthOutput"></span>
+         </p>
+         <p>
+           Wochentag mögliche Arbeitslänge: <span id="normalWorkLengthOutput"></span>
+         </p>
+         <p>
+           Wochenendtag Arbeitslänge: <span id="weekendTimeOutput"></span>
+         </p>
+         <p>
+           Anzahl der produktiven Tage: <span id="productivDaysOutput"></span>
+         </p>
+         <p>
+           Mögliche Arbeitslänge an produktiven Tagen: <span id="productivDaysWorkLengthOutput"></span>
+         </p>
+       </section>
+    </article>
+    <article>
+      <p>
+        *Die Aufgaben müssen an einem Montag beginnen <br>
+      </p>   
+    </article>
+   </div>
+  <script src="main.js"></script>
+  </body>
+</html>
